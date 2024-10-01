@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.repos-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+
+  padding: 50px;
+}
+.repos-container h1 {
+  text-align: center;
+  width: fit-content;
+  display: block;
+  padding: 20px 30px;
+  margin: 0px auto 50px;
+  border-radius: 10px;
+  color: white;
+  font-size: 35px;
+  background: linear-gradient(to bottom, #9500ff, #3e78ff);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.repos-container .get-repos {
+  padding: 20px;
+  display: flex;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.496);
+}
+.repos-container .get-repos input::placeholder {
+  color: #9500ff;
+  transition: 0.3s;
+}
+.repos-container .get-repos input {
+  width: 100%;
+  padding: 15px 20px;
+  border: none;
+  font-size: 20px;
+  height: 54px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.268);
+}
+.repos-container .get-repos input:focus::placeholder {
+  color: white;
+}
+.repos-container .get-repos input:focus {
+  outline: 2px solid #3e78ff;
+  height: 52px;
+}
+.repos-container .get-repos .get-button {
+  width: 140px;
+  line-height: 54px; /* يخليك الكلام يتوسط طوليا */
+  height: 54px;
+  text-align: center;
+  margin-left: 10px;
+  background: linear-gradient(to bottom, #9500ff, #3e78ff);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.repos-container .get-repos .get-button:hover {
+  transform: scale(1.081);
+}
+
+.repos-container .show-data {
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.496);
+}
+.repos-container .show-data > span {
+  color: #9500ff;
+  font-size: 22px;
+}
+.repos-container .show-data .repo-box {
+  padding: 12px 20px;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.repos-container .show-data .repo-box:not(:last-child) {
+  margin-bottom: 5px;
+}
+.repos-container .show-data .repo-box a,
+.repos-container .show-data .repo-box span {
+  margin-left: 4px;
+  border-radius: 8px;
+  font-size: 13px;
+  width: 90px;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.repos-container .show-data .repo-box a {
+  text-decoration: none;
+  background: #3e78ff;
+  transition: 0.3s;
+}
+
+.repos-container .show-data .repo-box a:hover {
+  transform: scale(1.081);
+}
+
+.repos-container .show-data .repo-box span {
+  background-color: goldenrod;
+}
+.repos-container .show-data .repo-box div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex-direction: row-reverse;
+}
+
+/*  اعملي موقع شبه يجبلك اول  كام بوست من الفيس  */
+/* trai ur self about context in the vidio in the min 33  */
+
+.contact {
+  margin: 15px auto;
+  width: 100%;
+  text-align: center;
+}
+.img-container {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid goldenrod;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 3px;
+  width: 120px;
+  height: 120px;
+}
+img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.show-data p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
